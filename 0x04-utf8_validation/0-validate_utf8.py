@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-""" A module that determines if a given data set represents a valid UTF-8 encoding """
+""" A module that determines if a given data set represents
+ a valid UTF-8 encoding """
+
 
 def validUTF8(data):
     """determines if a given data set represents a valid UTF-8 encoding"""
@@ -7,7 +9,8 @@ def validUTF8(data):
     # Number of bytes in the current UTF-8 character
     n_bytes = 0
 
-    # Mask to check if the most significant bit (8th bit from the left) is set or not
+    # Mask to check if the most significant bit (8th bit from the left) is set
+    # or not
     mask1 = 1 << 7
 
     # Mask to check if the second most significant bit is set or not
